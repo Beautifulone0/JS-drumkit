@@ -30,6 +30,11 @@ function play (e) {
 }
 
 let sounds = document.querySelectorAll(".sounds");
-sounds.forEach(sounds => sounds.addEventListener("transitionend", removeTransition));
+//sounds.forEach(sound => sound.addEventListener("transitionend", removeTransition));
+sounds.forEach(sound =>  {
 
+  sound.addEventListener("transitionend", (e) => {
+    removeTransition(e)
+  } )
+});
 document.addEventListener("keydown", play)

@@ -18,6 +18,7 @@ body{
   margin: 1rem;
   width: 25%;
   height: 20%;
+  transition: all 1s ease;
 }
 .sounds kbd{
   display: block;
